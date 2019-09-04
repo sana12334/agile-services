@@ -3,6 +3,13 @@ osx_image: xcode10.2
 
 language: bash
 
+before-cache:
+ - brew cleanup
+ 
+cache:
+ -directories:
+ -$HOME/Library/Caches/HomeBrew
+
 before-install:
  - whoami
  - echo "start of pipeline"
