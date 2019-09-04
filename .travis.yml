@@ -23,7 +23,7 @@ install:
    
 script:
     - ls
-    - chmod + Hello.sh
+    - chmod + hello.sh
     - ./hello.sh
     
 after-script:
