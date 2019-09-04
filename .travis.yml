@@ -4,20 +4,20 @@ osx_image: xcode10.2
 language: bash
 
 before-install:
- -whoami
- -echo "start of pipeline"
- -HOMEBREW_NO_AUTO_UPDATE=1
+ - whoami
+ - echo "start of pipeline"
+ - HOMEBREW_NO_AUTO_UPDATE=1
    
        
 install:
-   -whoami
-   -echo "start of the pipeline "
-   -HOMEBREW_NO_AUTO_UPDATE=1
+   - whoami
+   - echo "start of the pipeline "
+   - HOMEBREW_NO_AUTO_UPDATE=1
    
 script:
-    -ls
-    -chmod + Hello.sh
-    -./hello.sh
+    - ls
+    - chmod + Hello.sh
+    - ./hello.sh
     
 after-script:
-     -echo "End of pipeline "
+     - echo "End of pipeline "
