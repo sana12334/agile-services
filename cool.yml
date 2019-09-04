@@ -1,0 +1,19 @@
+os:osx
+osx_image: xcode10.2
+
+language:bash
+
+git:
+   dept:false 
+   
+   cache:
+      -directories:
+         -$HOME/Library/Caches/Homebrew
+         
+install:
+   -whoami
+   -echo "start of the pipeline "
+   -HOMEBREW_NO_AUTO_UPDATE=1
+   
+   script:
+   
